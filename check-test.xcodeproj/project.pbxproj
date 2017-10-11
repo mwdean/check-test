@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC776E381F8DB8EF00157875 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC776E371F8DB8EF00157875 /* main.swift */; };
+		AC776E411F8DBA9600157875 /* libtermcap.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC776E401F8DBA9600157875 /* libtermcap.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		AC776E341F8DB8EF00157875 /* check-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "check-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC776E371F8DB8EF00157875 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AC776E3E1F8DBA0300157875 /* com.shoesbeneatus.check-test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "com.shoesbeneatus.check-test.plist"; sourceTree = "<group>"; };
+		AC776E401F8DBA9600157875 /* libtermcap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libtermcap.tbd; path = usr/lib/libtermcap.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC776E411F8DBA9600157875 /* libtermcap.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +47,7 @@
 			children = (
 				AC776E361F8DB8EF00157875 /* check-test */,
 				AC776E351F8DB8EF00157875 /* Products */,
+				AC776E3F1F8DBA9600157875 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +63,17 @@
 			isa = PBXGroup;
 			children = (
 				AC776E371F8DB8EF00157875 /* main.swift */,
+				AC776E3E1F8DBA0300157875 /* com.shoesbeneatus.check-test.plist */,
 			);
 			path = "check-test";
+			sourceTree = "<group>";
+		};
+		AC776E3F1F8DBA9600157875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC776E401F8DBA9600157875 /* libtermcap.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TQ446EWG5;
+				INFOPLIST_FILE = "$(SRCROOT)/check-test/com.shoesbeneatus.check-test.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shoesbeneathus.check-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -248,6 +265,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TQ446EWG5;
+				INFOPLIST_FILE = "$(SRCROOT)/check-test/com.shoesbeneatus.check-test.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shoesbeneathus.check-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
